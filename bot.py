@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 import os
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+BOT_TOKEN = os.environ.get("TOKEN")
 # Состояния для ConversationHandler (добавляем к существующим)
 DESCRIPTION, MEDIA, FEEDBACK = range(3)  # Обновляем range
 
