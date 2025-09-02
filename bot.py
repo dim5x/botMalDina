@@ -11,8 +11,10 @@ logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Токен бота (ЗАМЕНИТЕ НА ВАШ ТОКЕН!)
-BOT_TOKEN = "8430726619:AAGqEt09f68k1iBatN35LOXPhPjbK0VTJkU"
 
+
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 # Состояния для ConversationHandler (добавляем к существующим)
 DESCRIPTION, MEDIA, FEEDBACK = range(3)  # Обновляем range
 
